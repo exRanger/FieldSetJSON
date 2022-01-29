@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import MyButton from './UI/button/MyButton'
-import MyInput from './UI/input/MyInput';
+import MyInput from './UI/input/MyInput'
 
 export default function PostForm({createPost, removePost}) {
 
@@ -12,7 +12,6 @@ export default function PostForm({createPost, removePost}) {
     setPost({title: '', body: ''})
   }
 
- 
   return (
     <form>
       <MyInput value={post.title}
@@ -24,8 +23,8 @@ export default function PostForm({createPost, removePost}) {
       />
       <MyInput value={post.body}
         onChange={e => setPost((state) =>
-        ({ ...state, body: e.target.value }
-        ))}
+          ({ ...state, body: e.target.value }))
+        }
         type="text"
         placeholder='Описание поста' />
       <MyButton onClick={addPost}>Добавить пост</MyButton>
