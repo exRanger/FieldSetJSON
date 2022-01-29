@@ -11,6 +11,5 @@ export default class PostApi {
                }
             })
             return response
-         
      }
 }
