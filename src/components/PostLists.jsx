@@ -4,6 +4,7 @@ import {
     CSSTransition,
     TransitionGroup,
   } from 'react-transition-group';
+
 export default function PostLists({posts, title}) {
 
     if(!posts.length){
