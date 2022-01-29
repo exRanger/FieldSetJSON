@@ -28,40 +28,43 @@
 
 .remove-btn {
     margin-right: 0.5rem;
-  }
+}
   
-  .post-enter {
+.post-enter {
     opacity: 0;
-  }
-  .post-enter-active {
-    opacity: 1;
-    transition: opacity 500ms ease-in;
-  }
-  .post-exit {
-    opacity: 1;
-  }
-  .post-exit-active {
-    opacity: 0;
-    transition: opacity 500ms ease-in;
-  }  
+}
 
-  .page__wrapper{
+.post-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.post-exit {
+    opacity: 1;
+}
+
+.post-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}  
+
+.page__wrapper{
     margin-top: 15px;
     display: flex;
     justify-content: center;
-  }
+}
 
-  .page{
+.page{
     cursor: pointer;
     padding: 10px;
     border: 1px solid turquoise;
-  }
+}
 
-  .page:hover{
+.page:hover{
     background: rgba(36, 75, 71, 0.1);
-  }
+}
   
-  .page__current{
+.page__current{
     border: 2px solid rgb(6, 26, 24);
     font-weight: bold;
-  }
+}
