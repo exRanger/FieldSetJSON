@@ -1,0 +1,8 @@
+.MyInput{
+    border: 1px solid turquoise;
+    color: turquoise;
+    padding: 5px 20px;
+    font-size: 15px;
+
+}
+.MyInput::-webkit-input-placeholder { color: turquoise; }
