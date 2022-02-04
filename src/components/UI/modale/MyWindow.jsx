@@ -2,7 +2,7 @@ import React from 'react'
 import cl  from './MyWindow.module.css'
 
 export default function MyWindow({children, visible, setVisible}) {
-    console.log(visible)
+    
     const rootClasses = [cl.MyWindow] 
 
     if(visible){
