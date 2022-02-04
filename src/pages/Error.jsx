@@ -3,7 +3,7 @@ import React from 'react'
 export default function Error() {
     return (
         <div>
-            PAGE NOT FOUND 404
+            Page not found 404
         </div>
     )
 }
