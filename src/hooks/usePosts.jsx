@@ -8,7 +8,6 @@ export const useSortedPosts = (posts, sort) =>  {
           return posts
         }
       }, [sort, posts])
-    
 }
 
 export const usePosts = (posts, sort, query) => {
