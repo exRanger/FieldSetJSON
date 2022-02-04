@@ -7,12 +7,13 @@ export default function Pagination({totalPages, page, setPage}) {
         <div className='page__wrapper'>
             {pagesArray.map(p => {
                 return <span
-                    onClick={() => {
-                        setPage(p)
-                    }}
-                    className={p === page ? 'page page__current' : 'page'}
-                >
-                    {p}</span>
+                        onClick={() => {
+                            setPage(p)
+                        }}
+                        className={p === page ? 'page page__current' : 'page'}
+                        >
+                        {p}
+                        </span>
             })}
         </div>
     )
