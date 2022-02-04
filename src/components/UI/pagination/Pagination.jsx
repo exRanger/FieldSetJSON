@@ -2,7 +2,9 @@ import React from 'react'
 import { getPagesArray } from '../../../utils/pages'
 
 export default function Pagination({totalPages, page, setPage}) {
+    
     let pagesArray = getPagesArray(totalPages)
+    
     return (
         <div className='page__wrapper'>
             {pagesArray.map(p => {
