@@ -1,12 +1,10 @@
 import React from 'react'
-
 import MySelect from './UI/select/MySelect';
 import MyInput from './UI/input/MyInput';
 
 export default function PostFilter({setFilter, filter}) {
     return (
         <div>
-            
             <MyInput
                 value={filter.query}
                 onChange={(e) => setFilter({...filter, query: e.target.value})}
