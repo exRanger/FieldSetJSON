@@ -23,7 +23,6 @@ export default function PostFilter({setFilter, filter}) {
                         name: 'По содержимому'
                     }
                 ]}
-
             />
         </div>
     )
