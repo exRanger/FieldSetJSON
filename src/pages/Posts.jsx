@@ -30,8 +30,6 @@ import React, {
     const [limit, setLimit] = useState(10)
     const [page, setPage] = useState(1)
   
-    
-  
     const [fetchPosts, isPostLoading, postError] = useFetching(async () => {
       
       const response = await PostApi.getAllPosts(limit, page)
