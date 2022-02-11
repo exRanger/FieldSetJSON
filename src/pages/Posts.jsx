@@ -22,16 +22,15 @@ import React, {
   export const MainContext = createContext()
   
   function App() {
-  
+    /* state hooks */
     const [posts, setPosts] = useState([])
     const [filter, setFilter] = useState({ sort: '', query: '' })
     const [totalPages, setTotalPages] = useState(0)
     const [visibleModal, setVisibleModal] = useState(false)
     const [limit, setLimit] = useState(10)
     const [page, setPage] = useState(1)
-  
+    /* Lifecycle hooks after mount */
     const [fetchPosts, isPostLoading, postError] = useFetching(async () => {
-      
       const response = await PostApi.getAllPosts(limit, page)
       setPosts(response.data)
       const totalCount = response.headers['x-total-count']
