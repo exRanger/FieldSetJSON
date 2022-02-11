@@ -55,31 +55,29 @@ import React, {
     return (
       <div className="App">
         <MainContext.Provider value={removePost}>
-          <MyButton onClick={() => setVisibleModal(true)}>
-            Создать пост
-          </MyButton>
-          <PostFilter
-            filter={filter}
-            setFilter={setFilter}
-          />
-          {postError && <h1>Произошла ошибка ${postError}</h1>}
-          {isPostLoading 
-           ? <div style={{display: 'flex', justifyContent: 'center', marginTop: '100px'}}> <MyLoader/></div>
-           : <PostLists
-              posts={toFilterAndSort}
-              title="Список Постов 1"
+            <MyButton onClick={() => setVisibleModal(true)}>
+                Создать пост
+            </MyButton>
+            <PostFilter
+                filter={filter}
+                setFilter={setFilter}
             />
-          }
-          <MyWindow visible={visibleModal} setVisible={setVisibleModal}>
-            <PostForm
-              createPost={createPost}
+            {postError && <h1>Произошла ошибка ${postError}</h1>}
+            {isPostLoading 
+            ? <div style={{display: 'flex', justifyContent: 'center', marginTop: '100px'}}> <MyLoader/></div>
+            : <PostLists
+                posts={toFilterAndSort}
+                title="Список Постов 1"
+              />
+            }
+            <MyWindow visible={visibleModal} setVisible={setVisibleModal}>
+                <PostForm createPost={createPost}/>
+            </MyWindow>
+            <Pagination
+                totalPages={totalPages}
+                setPage={setPage}
+                page={page}
             />
-          </MyWindow>
-         <Pagination
-         totalPages={totalPages}
-         setPage={setPage}
-         page={page}
-         />
         </MainContext.Provider>
       </div>
     );
