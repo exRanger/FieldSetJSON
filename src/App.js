@@ -5,9 +5,9 @@ import {
   Route,
   Link,
   Navigate
-} from "react-router-dom";
+} from "react-router-dom"
 import About from './pages/About'
-import Error from './pages/Error';
+import Error from './pages/Error'
 import Posts from './pages/Posts'
 import './styles/App.css'
 
