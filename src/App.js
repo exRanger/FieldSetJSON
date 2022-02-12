@@ -15,14 +15,13 @@ export default function App() {
   return (
     <Router>
       <div className={'navbar'}>
-      <Link to="/about">Invoices</Link> 
+        <Link to="/about">Invoices</Link> 
         <Link to="/posts">Expenses</Link>
       </div>
       <Routes>
           <Route exact path="/about" element={<About/>}/> 
           <Route exact path="/posts" element={<Posts/>}/>  
-          <Route exact path="/error" element={<Error/>}/>
-         
+          <Route exact path="/error" element={<Error/>}/>   
       </Routes>
       <Navigate to='/error' element={<Error/>}/>
     </Router>
