@@ -1,7 +1,7 @@
 import React from 'react'
 import cl  from './MyWindow.module.css'
 
-export default function MyWindow({children, visible, setVisible}) {
+export default function MyWindow({children, visible, setVisible}){
     
     const rootClasses = [cl.MyWindow] 
 
