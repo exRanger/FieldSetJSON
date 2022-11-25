@@ -1,5 +1,5 @@
-import React from 'react'
-import cl from './MyLoader.module.css'
+import React from 'react';
+import cl from './MyLoader.module.css';
 
 export default function MyLoader() {
     return (
