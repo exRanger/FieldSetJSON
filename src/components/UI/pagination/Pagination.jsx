@@ -1,5 +1,5 @@
 import React from 'react'
-import { getPagesArray } from '../../../utils/pages'
+import {getPagesArray} from '../../../utils/pages'
 
 export default function Pagination({totalPages, page, setPage}) {
     let pagesArray = getPagesArray(totalPages)
