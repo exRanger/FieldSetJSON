@@ -1,4 +1,4 @@
-import {useMemo} from 'react'
+import {useMemo} from 'react';
 
 export const useSortedPosts = (posts, sort) =>  {
     return useMemo(() => {
@@ -7,14 +7,14 @@ export const useSortedPosts = (posts, sort) =>  {
         } else {
           return posts
         }
-      }, [sort, posts])
+      }, [sort, posts]);
 }
 
 export const usePosts = (posts, sort, query) => {
-    const toSortPosts = useSortedPosts(posts, sort)
+    const toSortPosts = useSortedPosts(posts, sort);
     return useMemo(() => {
         return toSortPosts.filter((post) => {
           return post.title.toLocaleLowerCase().includes(query.toLowerCase())
         })
-      }, [query, sort, posts])
+      }, [query, sort, posts]);
 }
